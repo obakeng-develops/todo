@@ -43,5 +43,5 @@ def deleteTask(request, pk):
     context = {
         'item': item
     }
-    
-    return render(request, 'task/deleteTask.html', context)
+
+    return render(request, 'tasks/delete.html', context)
