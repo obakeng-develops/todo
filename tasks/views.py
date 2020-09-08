@@ -36,3 +36,6 @@ def updateTask(request, pk):
     }
 
     return render(request, 'tasks/update_task.html', context)
+
+def deleteTask(request, pk):
+    return render(request, 'task/deleteTask.html')
