@@ -19,3 +19,8 @@ def index(request):
         'form': form
     }
     return render(request, "tasks/list.html", context)
+
+def updateTask(request, pk):
+    task = Task.objects.get(pk=pk)
+    
+    return render(request, 'tasks/update_task.html')
